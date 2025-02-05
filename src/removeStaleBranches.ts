@@ -323,4 +323,6 @@ export async function removeStaleBranches(
     `${icons.remove} ${summary.remove} removed`,
   ].join(", ");
   console.log(`Summary:  ${actionSummary}`);
+
+  core.setOutput("branches_removed", summary.remove);
 }
