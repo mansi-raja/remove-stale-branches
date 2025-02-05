@@ -1,4 +1,4 @@
-name: "Remove Stale Branches"
+name: "Remove Stale Branches with output"
 description: "Cleanup stale branches from a repository"
 author: "Francois Picalausa"
 runs:
