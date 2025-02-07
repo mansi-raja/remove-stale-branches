@@ -202,6 +202,8 @@ function logActionRunConfiguration(
 ) {
   if (params.isDryRun) {
     console.log("Running in dry-run mode. No branch will be removed.");
+    console.log("TEST to check if release is working 111");
+
   }
 
   console.log(

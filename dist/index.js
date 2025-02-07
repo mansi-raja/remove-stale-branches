@@ -30395,7 +30395,7 @@ function planBranchAction(now, branch, filters, commitComments, params) {
 function logActionRunConfiguration(params, staleCutoff, removeCutoff) {
     if (params.isDryRun) {
         console.log("Running in dry-run mode. No branch will be removed.");
-        console.log("TEST to check if release is working");
+        console.log("TEST to check if release is working 222");
     }
     console.log(`Branches updated before ${(0, formatISO_1.formatISO)(staleCutoff)} will be marked as stale`);
     if (params.daysBeforeBranchDelete == 0) {
