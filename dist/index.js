@@ -30482,6 +30482,11 @@ function removeStaleBranches(octokit, params) {
                     return;
                 }
             }
+            core.setOutput("branches_scanned", summary.scanned);
+            core.setOutput("branches_marked_stale", summary["mark stale"]);
+            core.setOutput("branches_kept_stale", summary["keep stale"]);
+            core.setOutput("branches_removed", summary.remove);
+            core.setOutput("branches_skipped", summary.skip);
         }
         catch (e_1_1) { e_1 = { error: e_1_1 }; }
         finally {
